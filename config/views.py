@@ -136,7 +136,7 @@ class ProductTypeView(viewsets.ModelViewSet):
         return Response(serialized_queryset.data)
 
     
-    @method_decorator(cache_page(CACHE_TTL))
+    # @method_decorator(cache_page(CACHE_TTL))
     def dispatch(self, *args, **kwargs):
         return super(ProductTypeView, self).dispatch(*args, **kwargs)
     
@@ -346,6 +346,6 @@ class StatesView(viewsets.ModelViewSet):
     queryset = States.objects.all()
     serializer_class = StateSerialzer
 
-    @method_decorator(cache_page(CACHE_TTL))
+    # @method_decorator(cache_page(CACHE_TTL))
     def dispatch(self, *args, **kwargs):
         return super(StatesView, self).dispatch(*args, **kwargs)
