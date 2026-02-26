@@ -32,7 +32,7 @@ parse-rest==0.10.2013
 phonenumbers==8.13.31
 pillow==10.4.0
 psycopg2-binary==2.9.9
-pysqlite3==0.5.0
+pysqlite3-binary==0.5.0
 python-dateutil==2.8.2
 pytz==2023.3
 query==0.1.4
